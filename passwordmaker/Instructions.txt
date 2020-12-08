@@ -1,0 +1,34 @@
+Assignment
+
+To improve the password, edit the string of characters choices so that it contains more digits, increasing the chances that digits will be picked. Do this by appending "1234567890" several more times on to the end of choices. There is no need for choices to contain only one of each character. If you want punctuation your passwords, append those characters to the string, as well.
+
+Another improvement is to require that a password have at least one digit. There are several ways in which this can be done. Don't assume that the required digit in a password will be in a fixed location.
+
+A further improvement is the rule that every consonant must be followed by a vowel of the same case. This will make passwords easier to memorize. Of course, it also makes them easier to guess, especially if a cracker knows that this rule is being used. 
+
+
+
+Extension: Password Cracker
+
+A password generator can also be used as a password cracker. Essentially, the generator keeps creating passwords until it finds one that works. (It is for this reason that most applications reject a logon attempt if the password fails many times.)
+
+Write a program that asks the user for a password. The user enters a password (which must be short). Now pretend that this password is a secret from the rest of the program, which must try to guess it. The program then uses the password generator repeatedly until a randomly generated password matches the password the user entered. Assume that the user's password is five characters or less (otherwise the program will run for eons). Write out the number attempts it took to find the password. Here are some example runs: 
+
+Enter a "secret" password-->ant
+Here is your password: ant
+It took 2181892 tries to guess it
+
+Enter a "secret" password-->rats
+Here is your password: rats
+It took 10956100 tries to guess it
+
+Enter a "secret" password-->frog
+Here is your password: frog
+It took 91555945 tries to guess it
+
+Enter a "secret" password-->moose
+Here is your password: moose
+It took 279530402 tries to guess it
+
+
+A better cracker program would systematically generate all possible one-letter passwords, then all possible two-letter passwords, then all possible three-letter passwords,..., and so on, comparing each one to the secret password. This program is hard to write without arrays (a subject of a future chapter). 

@@ -1,0 +1,7 @@
+Complete the add() method so that it concatenates a comma, a space, and String ingr to the end of String ingredients.
+
+Modify the Main class to use a Sentinel controlled loop to accept user input until the user enters a sentinel string, like "exit". Consider what type of loop will work best if you do not know how many of ingredients need to be added.
+
+Complete the Soup method, tastesGood. It has no parameters and returns true if "rat" is NOT one of the ingredients. Obviously if there is rat in the soup this method should return false. There are multiple ways to compete this step using what we have discussed!
+
+Add a method to the soup class that counts the number of ingredients in the soup. Consider which method of the String class would help you accomplish this, then test it.
